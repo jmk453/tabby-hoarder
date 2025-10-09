@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .classname {
+    @apply relative flex items-center hover:bg-green-600 transition-all duration-300 ease-linear;
+  }
+
+}
