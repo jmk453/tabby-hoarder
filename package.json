@@ -3,6 +3,6 @@
         "web-ext": "^9.1.0"
     },
     "scripts": {
-        "start:firefox": "web-ext run'"
+        "start:firefox": "web-ext run"
     }
 }
