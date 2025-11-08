@@ -48,6 +48,15 @@ getTabbyHoarderGroups()
         });
     
         element.querySelector("div").addEventListener("click", async () => {
+            if (getBrowserName() === "Firefox") {
+                const bookmarks = await browser.bookmarks.getChildren(group.id);
+                const urls = bookmarks.map(bookmark => bookmark.url).filter(url => url);
+                await browser.windows.create({
+                    url: urls
+                });
+                return;
+            }
+
             const children = await chrome.bookmarks.getChildren(group.id);
             const urls = children.filter(node => node.url).map(node => node.url);  // get all urls in this group
             let windowId;
