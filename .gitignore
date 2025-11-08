@@ -1,6 +1,7 @@
-images/back-button copy.png
-images/delete-button.png
-images/right-arrow-yellow.png
-images/lucilles.png
-images/oldicon.png
+/images/back-button copy.png
+/images/delete-button.png
+/images/right-arrow-yellow.png
+/images/lucilles.png
+/images/oldicon.png
+/node_modules
 *.DS_Store

@@ -1,3 +1,13 @@
+function getBrowserName() {
+    if (typeof browser !== "undefined") {
+        return "Firefox";
+    }
+    if (typeof chrome !== "undefined") {
+        return "Chrome";
+    }
+    return "Unknown";
+}
+
 const getTabbyHoarderGroups = async function () {
     try {
         // search for tabby-hoarder bookmarks folder
